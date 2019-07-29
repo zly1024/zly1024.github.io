@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Android开发学习总结(一);]]></title>
+    <url>%2F2019%2F07%2F29%2FAndroid%E5%BC%80%E5%8F%91%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93(%E4%B8%80)%2F</url>
+    <content type="text"><![CDATA[Android开发概述以及开发工具 Android开发概述 Android是Google开发的操作系统 Android是一种基于Linux的自由及开放源代码的操作系统，Android 分为四个层，从高层到低层分别是应用程 序层、应用程序框架层、系统运行库层和 Linux 内核层。 Android开发是移动应用开发的表现形式之一 其它表现形式:iOS,H5App,Native+H5,RN,ionic等. Android四大基本组件:Activity、Service、Broadcast Receivet、Content Provider. 特点:系统开源,跨平台,有丰富的应用. Android开发环境 ​ Android基于java的,早期使用eclipse作为IDE,现在比较流行的是Android Studio.它基于IntelliJ IDEA类似Echpse ADT，Android Studio提供了集成的 Android开发工具。相比较以前Eclipse，它自己内部就集成了SDK等，方便开发。通常情况下，在正常安装JDK后，继续安装 Android Studio后，便可直接使用了。 第一个Android应用 ​ 使用Android Studio创建一个安卓应用,我们可以在app/src/main/java/自定义包名/ 下看到MainActivity,这是默认的Activity主入口,直接启动项目就可以在虚拟机环境下看到默认的helloworld页面了. 新建一个Activity步骤: 新建一个java文件,继承于AppCompatActivity类并重写onCreat()方法,设置一个视图View. 在AndroidManifest.xml文件中注册新建的activity实体. 在res/layout包下创建一个xml视图文件,用于展示视图.]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Android开发</tag>
+        <tag>java</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[HEXO 新手搭建教程]]></title>
     <url>%2F2019%2F07%2F23%2FHEXO-%E6%96%B0%E6%89%8B%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[HEXO 新手指南 1.简介 Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看。 视频观看地址:https://www.bilibili.com/video/av44544186/?spm_id_from=333.788.videocard.15 2.安装必要的软件 进入Node.js官网安装nodeJs,安装完毕后命令行输入node -v 显示版本号,输入 npm -v 显示版本号即安装成功 进入git官网安装git,具体百度 安装hexo, 在命令行中输入 npm install -g hexo-cli 命令行输入hexo -v 显示版本号即安装成功 3. 搭建步骤 1.初始化项目 ​ 在任意目录创建一个文件夹,此文件夹就是博客的工程目录了,比如我创建的路径为 E:/blob/,然后在cmd中进入工程文件目录,输入命令行 hexo init 查看blog目录可以看到生成了很多文件,并且还生成了一个helloword文档,在source/_post目录下,然后输入 hexo s 即可启动项目,浏览器输入localhost:4000即可看到最简单的模型 2. 更换blog主题 ​ 在官网上找一个喜欢的主题或者使用视频里的yilia主题. 在工程根目录使用git bash 克隆工程或者直接下载zip包 git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly 打开根目录的_config.yml文件,设置主题 # Extensions## Plugins: https://hexo.io/plugins/## Themes: https://hexo.io/themes/theme: Butterfly 3. 部署项目到github上 创建一个github账号:https://github.com/ 创建一个repo仓库 Repository name: 账号名.github.io (必须) 进入cmd 输入命令 npm install --save hexo-deployer-git 等待插件下载完成后修改_config.yml,设置仓库地址 # Deployment## Docs: https://hexo.io/docs/deployment.htmldeploy: type: git repo: https://github.com/zly1024/zly1024.github.io.git branch: master 部署工程到git hexo d 浏览器访问https://zly1024.github.io 即可看到博客页面(这里输入自己的项目名) 4. 创建新博客 hexo new "博客名" 然后可以以写md文件的软件打开撰写. 重新部署到git hexo cleanhexo ghexo d]]></content>
